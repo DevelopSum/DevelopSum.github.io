@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Unity关于WebRequest Post 传输服务器乱码问题</title>
+      <link href="/2019/11/13/Unity%E5%85%B3%E4%BA%8EWebRequest%20Post%20%E4%BC%A0%E8%BE%93%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"/>
+      <url>/2019/11/13/Unity%E5%85%B3%E4%BA%8EWebRequest%20Post%20%E4%BC%A0%E8%BE%93%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>#[Unity]关于WebRequest Post 传输服务器乱码问题</p><p>今天早上做一个将前台用户输入的邮箱号码通过POSE传输给一个接口，接口自动发送找回密码邮件到前台用户输入的邮箱内。在使用Json和wwwform传输均会变成如下这是Json，wwwform只把符号转义了所以我没有贴上去<br>%0d%0a%7b%0d%0a%20%20%22Email%22%20%3a%20%22123%40icon.com%22%0d%0a%7d</p><p>这个是官方一点的解释使用HTTP协议与服务端进行POST通信，传输的数据格式是文本。其中涉及到了base64编码。</p><p>解决思路</p><p>在使用百度搜索无果后，打开了不存在的网站Google，输入Unity、HTTP、POST、URLEncode等关键字。终于寻找到了眉目<br>这个贴主遇到的是JSON序列化后的字符串也经过了“更正”，尽管与我的base64问题并不完全一致，也算的上是受害伙伴了。<br>在回帖中，一位外国友人针对Unity的HTTP通信细节进行了详细讲解。<br><a href="https://forum.unity.com/threads/unitywebrequest-post-url-jsondata-sending-broken-json.414708/" target="_blank" rel="noopener">https://forum.unity.com/threads/unitywebrequest-post-url-jsondata-sending-broken-json.414708/</a></p><p>解决方案是这样的</p><p>//通过PUT方式构造HTTP请求</p><pre><code>byte[] myData = System.Text.Encoding.UTF8.GetBytes(&quot;This is some test data&quot;);UnityWebRequest www = UnityWebRequest.Put(&quot;http://www.my-server.com/upload&quot;, myData);</code></pre><p>//构造好后，手动将请求方式更改为POST</p><pre><code>www.method = UnityWebRequest.kHttpVerbPOST;</code></pre><p>//常规的发送，接收操作</p><pre><code>yield return www.Send();if(www.isError) {  Debug.Log(www.error);}else {  Debug.Log(&quot;Upload complete!&quot;);}</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Blender入门</title>
       <link href="/2019/11/13/Blender%E5%85%A5%E9%97%A8/"/>
       <url>/2019/11/13/Blender%E5%85%A5%E9%97%A8/</url>
