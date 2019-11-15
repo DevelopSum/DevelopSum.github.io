@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-15T06:54:45.645Z</updated>
+  <updated>2019-11-15T07:13:11.715Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac Xcode Simulator 模拟器截屏</title>
+    <link href="http://yoursite.com/2019/11/15/Mac%20Xcode%20Simulator%20%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%88%AA%E5%B1%8F/"/>
+    <id>http://yoursite.com/2019/11/15/Mac Xcode Simulator 模拟器截屏/</id>
+    <published>2019-11-15T07:13:11.632Z</published>
+    <updated>2019-11-15T07:13:11.715Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Mac-Xcode-Simulator-模拟器截屏"><a href="#Mac-Xcode-Simulator-模拟器截屏" class="headerlink" title="Mac Xcode Simulator 模拟器截屏"></a>Mac Xcode Simulator 模拟器截屏</h1><p>左上角 File -&gt; New Screen Shot 快捷键 command + s</p><p>截图会在桌面</p><p><img src="https://github.com/DevelopSum/Image/raw/master/Mac%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%88%AA%E5%9B%BE/Mac%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%88%AA%E5%9B%BE.png" alt="Mac 模拟器截图"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Mac-Xcode-Simulator-模拟器截屏&quot;&gt;&lt;a href=&quot;#Mac-Xcode-Simulator-模拟器截屏&quot; class=&quot;headerlink&quot; title=&quot;Mac Xcode Simulator 模拟器截屏&quot;&gt;&lt;/a&gt;Mac Xcode S
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Blender在姿态模式下修改完成后如何保存</title>
