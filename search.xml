@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Blender在姿态模式下修改完成后如何保存</title>
+      <link href="/2019/11/15/Blender%E5%9C%A8%E5%A7%BF%E6%80%81%E6%A8%A1%E5%BC%8F%E4%B8%8B%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90%E5%90%8E%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98/"/>
+      <url>/2019/11/15/Blender%E5%9C%A8%E5%A7%BF%E6%80%81%E6%A8%A1%E5%BC%8F%E4%B8%8B%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90%E5%90%8E%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98/</url>
+      
+        <content type="html"><![CDATA[<p>#Blender在姿态模式下修改完成如何保存，并在Unity内可以使用</p><p>按住 I 键可以进行插入关键帧<br><img src="https://github.com/DevelopSum/Image/raw/master/Blender%E5%9C%A8%E5%A7%BF%E6%80%81%E6%A8%A1%E5%BC%8F%E4%B8%8B%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98/%E6%8F%92%E5%85%A5%E5%85%B3%E9%94%AE%E5%B8%A7.png" alt="插入关键帧"></p><p>也可以按 Ctrl + P 设置父物体目标<br><img src="https://github.com/DevelopSum/Image/raw/master/Blender%E5%9C%A8%E5%A7%BF%E6%80%81%E6%A8%A1%E5%BC%8F%E4%B8%8B%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98/%E8%AE%BE%E7%BD%AE%E7%88%B6%E7%89%A9%E4%BD%93%E7%9B%AE%E6%A0%87.png" alt="设置父物体目标"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Unity关于WebRequest Post 传输服务器乱码问题</title>
       <link href="/2019/11/13/Unity%E5%85%B3%E4%BA%8EWebRequest%20Post%20%E4%BC%A0%E8%BE%93%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"/>
       <url>/2019/11/13/Unity%E5%85%B3%E4%BA%8EWebRequest%20Post%20%E4%BC%A0%E8%BE%93%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
