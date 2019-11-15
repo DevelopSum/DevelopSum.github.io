@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-15T07:13:11.715Z</updated>
+  <updated>2019-11-15T09:04:50.485Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SONY 索尼 WH1000XM3 降级方法</title>
+    <link href="http://yoursite.com/2019/11/15/SONY%20%E7%B4%A2%E5%B0%BC%20WH1000XM3%20%E9%99%8D%E7%BA%A7%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/11/15/SONY 索尼 WH1000XM3 降级方法/</id>
+    <published>2019-11-15T09:04:05.337Z</published>
+    <updated>2019-11-15T09:04:50.485Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="SONY-索尼-WH1000XM3-降级方法"><a href="#SONY-索尼-WH1000XM3-降级方法" class="headerlink" title="SONY 索尼 WH1000XM3 降级方法"></a>SONY 索尼 WH1000XM3 降级方法</h1><p>#降级有风险，并且有几率变砖所以出事本人不负任何责任</p><p>需要电脑 和 手机 在同一 WIFI 下    需要设置代理 不会可以自行去百度</p><p>去这个网址下载这个压缩包</p><p><a href="https://github.com/DevelopSum/Image/blob/master/%E7%B4%A2%E5%B0%BC%E9%99%8D%E7%BA%A7/XM3%E5%9B%BA%E4%BB%B6.zip" target="_blank" rel="noopener">https://github.com/DevelopSum/Image/blob/master/%E7%B4%A2%E5%B0%BC%E9%99%8D%E7%BA%A7/XM3%E5%9B%BA%E4%BB%B6.zip</a></p><p>解压后获得XM3    固件这个插件</p><p>进入 XM3 - mdrproxy_0.0.1 这个目录中</p><p>然后运行 run.cmd</p><p>然后按下数字3键<br>这时候会出现一个端口号，在手机设置 WIFI 中设置代理即可 端口号填写cmd窗口中出现的端口号</p><p>按照步骤一步步来</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;SONY-索尼-WH1000XM3-降级方法&quot;&gt;&lt;a href=&quot;#SONY-索尼-WH1000XM3-降级方法&quot; class=&quot;headerlink&quot; title=&quot;SONY 索尼 WH1000XM3 降级方法&quot;&gt;&lt;/a&gt;SONY 索尼 WH1000XM3 降级
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Mac Xcode Simulator 模拟器截屏</title>
