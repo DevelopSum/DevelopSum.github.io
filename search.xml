@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>Linux查找文件</title>
+      <link href="/2019/11/20/Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6/"/>
+      <url>/2019/11/20/Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<p>#Linux查找文件</p><ul><li>使用 find / -name 1111.jpg 命令即可</li><li>1111.jpg是查找的文件名，这里可以被替换</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>NodeJS学习日志</title>
+      <link href="/2019/11/18/NodeJS%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+      <url>/2019/11/18/NodeJS%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/</url>
+      
+        <content type="html"><![CDATA[<p>#NodeJS学习日志</p><p><a href="http://nodejs.cn/download/" target="_blank" rel="noopener">官网下载链接</a></p><p><a href="https://blog.csdn.net/DreamWeaver_zhou/article/details/78587580" target="_blank" rel="noopener">什么是高并发 ，详细讲解。转载自 DreamWeaver_Zhou</a></p><p>高并发简称为同时大量同时处理例如：双十一购物，很多人同时抢一个商品，从前端的角度来看确实只是点击了一个按钮，但这时从前端点击按钮之后要向服务器发送一个请求。</p><p>####Node是什么</p><p>######特点：</p><ul><li>chrome v8 runtime</li><li>事件驱动</li><li>非阻塞的I/O<br>IO：input output输入输出流 正常下I/O的操作都是阻塞的 网络请求 数据库处理 文件的读写</li><li>优点：高并发特别好</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SONY 索尼 WH1000XM3 降级方法</title>
       <link href="/2019/11/15/SONY%20%E7%B4%A2%E5%B0%BC%20WH1000XM3%20%E9%99%8D%E7%BA%A7%E6%96%B9%E6%B3%95/"/>
       <url>/2019/11/15/SONY%20%E7%B4%A2%E5%B0%BC%20WH1000XM3%20%E9%99%8D%E7%BA%A7%E6%96%B9%E6%B3%95/</url>
