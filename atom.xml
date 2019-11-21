@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-20T06:59:59.760Z</updated>
+  <updated>2019-11-21T08:52:17.113Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unity提取动画文件及Assetbundle的使用</title>
+    <link href="http://yoursite.com/2019/11/21/Unity%E6%8F%90%E5%8F%96%E5%8A%A8%E7%94%BB%E6%96%87%E4%BB%B6%E5%8F%8AAssetbundle%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2019/11/21/Unity提取动画文件及Assetbundle的使用/</id>
+    <published>2019-11-21T08:07:39.959Z</published>
+    <updated>2019-11-21T08:52:17.113Z</updated>
+    
+    <content type="html"><![CDATA[<p>#Unity提取动画文件及Assetbundle的使用</p><h4 id="提取动画文件"><a href="#提取动画文件" class="headerlink" title="提取动画文件"></a>提取动画文件</h4><p>将以下代码复制到一个新的类中，然后把它放到Editor这个工具类的文件夹内。等其编译完成后会在顶部的选项中多出一个AnimationClip选项，此时选中你想导出的动画文件点击AnimationClip - GetFilteredtoAnim &amp;1即可在工程目录下的AnimationClip中看到导出的动画文件。</p><blockquote><p>注意 ：如果打包失败提示为这个类里面有报错可以先将其移除，打包完成后或等以后有需要在导入该脚本 </p></blockquote><pre><code>sing UnityEngine;using UnityEditor;using System.Collections;using System.IO;public class AnimationClipTool{[MenuItem(&quot;AnimationClip/GetFilteredtoAnim &amp;1&quot;, true)]static bool NotGetFiltered(){    return Selection.activeObject;}[MenuItem(&quot;AnimationClip/GetFilteredtoAnim &amp;1&quot;)]static void GetFiltered(){    string targetPath = Application.dataPath + &quot;/AnimationClip&quot;;    if (!Directory.Exists(targetPath))    {        Directory.CreateDirectory(targetPath);    }    Object[] SelectionAsset = Selection.GetFiltered(typeof(Object), SelectionMode.Unfiltered);    Debug.Log(SelectionAsset.Length);    foreach (Object Asset in SelectionAsset)    {        AnimationClip newClip = new AnimationClip();        EditorUtility.CopySerialized(Asset, newClip);        AssetDatabase.CreateAsset(newClip, &quot;Assets/AnimationClip/&quot; + Asset.name + &quot;.anim&quot;);    }    AssetDatabase.Refresh();}}</code></pre><h4 id="Assetbundle"><a href="#Assetbundle" class="headerlink" title="Assetbundle"></a>Assetbundle</h4><ol><li>选中需要打包的文件，在右下角点击New添加一个包名<br><img src="https://github.com/DevelopSum/Image/raw/master/%E5%8A%A8%E7%94%BB%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96%E5%8F%8AAB%E5%8C%85%E7%9A%84%E4%BD%BF%E7%94%A8/1.png" alt=""></li><li>在Asset Store中搜索Asset Bundle，并把收费标准选为免费。下载之后导入工程内，然后在Windows找到AssetBundle Browser选项，单击打开它，出现如下面板<br><img src="https://github.com/DevelopSum/Image/raw/master/%E5%8A%A8%E7%94%BB%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96%E5%8F%8AAB%E5%8C%85%E7%9A%84%E4%BD%BF%E7%94%A8/2.png" alt=""></li><li>单击中键的Build这个选项，在该选项内可以调整Build Target(运行环境)，也可以选择Output Path(输出目录)。也可以展开Advanced Settings中选择Compression(压缩率)等一些数值。如果在打包完毕下载的时候会出现CRC报错就将Append Hash这个选项勾上即可解决该问题<br><img src="https://github.com/DevelopSum/Image/raw/master/%E5%8A%A8%E7%94%BB%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96%E5%8F%8AAB%E5%8C%85%E7%9A%84%E4%BD%BF%E7%94%A8/3.png" alt=""></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#Unity提取动画文件及Assetbundle的使用&lt;/p&gt;
+&lt;h4 id=&quot;提取动画文件&quot;&gt;&lt;a href=&quot;#提取动画文件&quot; class=&quot;headerlink&quot; title=&quot;提取动画文件&quot;&gt;&lt;/a&gt;提取动画文件&lt;/h4&gt;&lt;p&gt;将以下代码复制到一个新的类中，然后把它
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Linux查找文件</title>
