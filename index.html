@@ -171,6 +171,72 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/25/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Maven">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Maven's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/25/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/" class="post-title-link" itemprop="url">IOS审核被拒修改方式</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-25 14:25:07" itemprop="dateCreated datePublished" datetime="2019-11-25T14:25:07+08:00">2019-11-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>#IOS审核被拒修改方式<br>当出现如下两种报错时，或在被拒绝的邮件内有相应的提示，却在Xcode info.plist中找不到对应的键值，可以在Xcode info.plist中添加相应的值并注明权限的使用方法。警告或被拒绝示例如下：<br><img src="https://github.com/DevelopSum/Image/raw/master/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E7%BB%9D%E4%BF%AEIOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E6%8E%A5%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/NSLocationAlwaysUsageDescription.png" alt=""><br><img src="https://github.com/DevelopSum/Image/raw/master/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E7%BB%9D%E4%BF%AEIOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E6%8E%A5%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/NSLocationWhenInUseUsageDescription.png" alt=""></p>
+<p>解决方案如下：<br><img src="https://github.com/DevelopSum/Image/raw/master/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E7%BB%9D%E4%BF%AEIOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E6%8E%A5%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/Xcode%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95.png" alt=""></p>
+<ol>
+<li>在Xcode工程中找到info.plist这个文件并双击打开</li>
+<li>在如图所框选的位置右键</li>
+<li>单击Add Row添加一个新的值进去</li>
+<li>在出现的框内输入提示的值，如图内已显示的值，可以不用在源码内进行添加，只在这里进行添加，它会自动转换</li>
+<li>在如图所示的位置内添加为什么需要使用这个权限</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/21/Unity%E6%8F%90%E5%8F%96%E5%8A%A8%E7%94%BB%E6%96%87%E4%BB%B6%E5%8F%8AAssetbundle%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -818,81 +884,12 @@ else {
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/LitJson%E7%9A%84%E4%BD%BF%E7%94%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Maven">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Maven's blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/12/LitJson%E7%9A%84%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">LitJson的使用</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-11-12 14:07:00 / 修改时间：14:10:03" itemprop="dateCreated datePublished" datetime="2019-11-12T14:07:00+08:00">2019-11-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>﻿#LitJson的使用</p>
-<hr>
-<p>在项目内引入Using LitJson 命名空间  </p>
-<pre><code>public void Forget(string url) {
-    JsonData json = new JsonData();
-    json[&quot;Email&quot;] = emailIpt.text;
-
-    Debug.Log(json.ToString());
-    string jsonData = json.ToJson();
-
-    foreach (var item in jsonData) {
-
-        print(item.ToString());
-    }
-}</code></pre>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -937,7 +934,7 @@ else {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

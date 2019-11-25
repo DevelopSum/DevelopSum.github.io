@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-21T09:07:06.056Z</updated>
+  <updated>2019-11-25T06:25:07.921Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IOS审核被拒修改方式</title>
+    <link href="http://yoursite.com/2019/11/25/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/11/25/IOS审核被拒修改方式/</id>
+    <published>2019-11-25T06:25:07.828Z</published>
+    <updated>2019-11-25T06:25:07.921Z</updated>
+    
+    <content type="html"><![CDATA[<p>#IOS审核被拒修改方式<br>当出现如下两种报错时，或在被拒绝的邮件内有相应的提示，却在Xcode info.plist中找不到对应的键值，可以在Xcode info.plist中添加相应的值并注明权限的使用方法。警告或被拒绝示例如下：<br><img src="https://github.com/DevelopSum/Image/raw/master/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E7%BB%9D%E4%BF%AEIOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E6%8E%A5%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/NSLocationAlwaysUsageDescription.png" alt=""><br><img src="https://github.com/DevelopSum/Image/raw/master/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E7%BB%9D%E4%BF%AEIOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E6%8E%A5%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/NSLocationWhenInUseUsageDescription.png" alt=""></p><p>解决方案如下：<br><img src="https://github.com/DevelopSum/Image/raw/master/IOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E7%BB%9D%E4%BF%AEIOS%E5%AE%A1%E6%A0%B8%E8%A2%AB%E6%8B%92%E6%8E%A5%E4%BF%AE%E6%94%B9%E6%96%B9%E5%BC%8F/Xcode%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95.png" alt=""></p><ol><li>在Xcode工程中找到info.plist这个文件并双击打开</li><li>在如图所框选的位置右键</li><li>单击Add Row添加一个新的值进去</li><li>在出现的框内输入提示的值，如图内已显示的值，可以不用在源码内进行添加，只在这里进行添加，它会自动转换</li><li>在如图所示的位置内添加为什么需要使用这个权限</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#IOS审核被拒修改方式&lt;br&gt;当出现如下两种报错时，或在被拒绝的邮件内有相应的提示，却在Xcode info.plist中找不到对应的键值，可以在Xcode info.plist中添加相应的值并注明权限的使用方法。警告或被拒绝示例如下：&lt;br&gt;&lt;img src=&quot;http
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Unity提取动画文件及Assetbundle的使用</title>
